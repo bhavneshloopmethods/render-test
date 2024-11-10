@@ -1,0 +1,10 @@
+services:
+  #node-server
+  volume-test:
+    build:
+      context: .
+    container_name: volume-test
+    ports:
+      - "2000:2000"
+    volumes:
+      - .:/app
